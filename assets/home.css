@@ -1,0 +1,129 @@
+/* ============================================================================
+   Shura Studios — home page only
+   ========================================================================== */
+
+/* ── Hero ──────────────────────────────────────────────────────────────── */
+.hero{padding:118px 0 84px;position:relative}
+.hero h1{font-size:clamp(42px,7.4vw,86px);margin:22px 0 22px;font-weight:800;letter-spacing:-.035em}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.hero h1 .line i{display:block;font-style:normal;transform:translateY(110%);
+  animation:riseIn 1s var(--ease) forwards}
+.hero h1 .line:nth-child(2) i{animation-delay:.12s}
+.hero h1 .line:nth-child(3) i{animation-delay:.24s}
+@keyframes riseIn{to{transform:translateY(0)}}
+.hero .lede{font-size:clamp(16.5px,1.9vw,19.5px);animation:fadeUp .9s .42s var(--ease) both}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;animation:fadeUp .9s .56s var(--ease) both}
+.hero-kicker{animation:fadeUp .8s .1s var(--ease) both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.orbit{position:absolute;right:-40px;top:70px;width:440px;height:440px;pointer-events:none;display:none}
+@media(min-width:1060px){.orbit{display:block}}
+.orbit .ring{position:absolute;inset:0;border:1px solid rgba(255,255,255,.07);border-radius:50%}
+.orbit .ring.r2{inset:58px;border-color:rgba(255,61,99,.14)}
+.orbit .ring.r3{inset:116px;border-color:rgba(255,255,255,.05)}
+.orbit .spin{position:absolute;inset:0;animation:spin 34s linear infinite}
+.orbit .spin.rev{animation-duration:24s;animation-direction:reverse}
+.orbit .chip{position:absolute;width:76px;height:76px;border-radius:22px;overflow:hidden;
+  border:1px solid var(--line);background:rgba(14,11,21,.9);
+  box-shadow:0 18px 50px -18px rgba(0,0,0,.9);animation:counterspin 34s linear infinite}
+.orbit .spin.rev .chip{animation-duration:24s;animation-direction:reverse}
+.orbit .c1{top:-38px;left:182px}
+.orbit .c2{bottom:20px;left:6px}
+.orbit .c3{bottom:20px;right:6px}
+.orbit .core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:118px;height:118px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 32% 28%,rgba(255,61,99,.34),rgba(124,58,237,.18));
+  border:1px solid var(--line-warm);box-shadow:0 0 70px rgba(255,61,99,.35);animation:pulse 4.5s ease-in-out infinite}
+.orbit .core svg{width:54px;height:54px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes counterspin{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 60px rgba(255,61,99,.3)}50%{box-shadow:0 0 110px rgba(255,61,99,.55)}}
+
+/* ── Ticker ────────────────────────────────────────────────────────────── */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:17px 0;overflow:hidden;background:rgba(255,255,255,.02);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.ticker-track{display:flex;gap:0;width:max-content;animation:slide 34s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{display:inline-flex;align-items:center;gap:22px;padding:0 22px;white-space:nowrap;
+  font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.ticker span::after{content:"◆";color:var(--crimson);font-size:9px;letter-spacing:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ── Section frame ─────────────────────────────────────────────────────── */
+/* Sections carry .wrap, whose `padding:0 24px` would otherwise win on
+   specificity and flatten the vertical rhythm — so qualify the selector. */
+section.wrap{padding:100px 24px}
+.sec-head{max-width:660px;margin-bottom:50px}
+.sec-head h2{font-size:clamp(28px,4vw,42px);margin:18px 0 16px;font-weight:750}
+.sec-head p{color:var(--body);font-size:16.5px;margin:0}
+
+/* ── Apps ──────────────────────────────────────────────────────────────── */
+.apps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}
+.app-card{padding:30px 28px 28px;display:flex;flex-direction:column;
+  transform-style:preserve-3d;will-change:transform}
+.app-card .halo{position:absolute;top:-70px;left:-70px;width:230px;height:230px;border-radius:50%;
+  filter:blur(60px);opacity:.3;transition:opacity .45s}
+.app-card:hover .halo{opacity:.6}
+.app-card .icon{width:76px;height:76px;border-radius:21px;border:1px solid var(--line);
+  box-shadow:0 16px 40px -16px rgba(0,0,0,.9);transition:transform .5s var(--ease)}
+.app-card:hover .icon{transform:translateZ(34px) scale(1.06) rotate(-3deg)}
+.app-card h3{font-size:20.5px;margin:22px 0 4px}
+.app-card .pkg{font-size:12.5px;color:var(--faint);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;margin:0 0 14px}
+.app-card p.desc{font-size:15px;color:var(--body);margin:0 0 20px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.tags i{font-style:normal;font-size:11.5px;letter-spacing:.06em;padding:5px 11px;border-radius:999px;
+  border:1px solid var(--line);color:var(--muted);background:rgba(255,255,255,.03)}
+.app-links{display:flex;gap:18px;align-items:center;font-size:14px;font-weight:600}
+.app-links a{color:var(--muted);display:inline-flex;align-items:center;gap:6px;transition:color .25s,gap .25s var(--ease)}
+.app-links a:hover{color:var(--crimson);gap:10px}
+.app-card.kuro .halo{background:#7c3aed}
+.app-card.tengu .halo{background:#10b981}
+.app-card.piano .halo{background:#ff8a3d}
+
+/* ── Stats ─────────────────────────────────────────────────────────────── */
+.stats{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--line)}
+.stat{background:var(--ink-2);padding:32px 26px;text-align:center}
+.stat b{display:block;font-size:clamp(32px,4.4vw,44px);font-weight:800;color:#fff;
+  letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.stat span{display:block;margin-top:10px;font-size:12.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* ── Principles ────────────────────────────────────────────────────────── */
+.grid-3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.principle{padding:30px 28px}
+.principle .ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  border:1px solid var(--line-warm);background:rgba(255,61,99,.1);margin-bottom:20px;
+  transition:transform .5s var(--ease),background .4s}
+.principle:hover .ico{transform:rotate(-8deg) scale(1.08);background:rgba(255,61,99,.2)}
+.principle .ico svg{width:22px;height:22px;stroke:var(--crimson);fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+.principle h3{font-size:17.5px;margin:0 0 9px}
+.principle p{font-size:14.8px;margin:0;color:var(--body)}
+
+/* ── CTA ───────────────────────────────────────────────────────────────── */
+.cta{padding:62px 40px;text-align:center;border-radius:30px;
+  background:linear-gradient(150deg,rgba(255,61,99,.15),rgba(124,58,237,.1) 55%,rgba(255,200,87,.07));
+  border:1px solid var(--line-warm);position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:-50%;
+  background:conic-gradient(from 0deg,transparent,rgba(255,61,99,.22),transparent 32%);
+  animation:spin 16s linear infinite}
+.cta > *{position:relative;z-index:2}
+.cta h2{font-size:clamp(28px,4.2vw,42px);margin-bottom:16px;font-weight:750}
+.cta p{max-width:52ch;margin:0 auto 30px;color:var(--body)}
+
+@media(max-width:640px){
+  .hero{padding:78px 0 58px}
+  section.wrap{padding:72px 24px}
+  .cta{padding:46px 24px}
+}
+
+/* The hero headline starts pushed out of its clipping mask and is pulled up by
+   the riseIn animation. site.css kills animations under reduced motion, so
+   without this the title would stay parked below the fold of its own mask. */
+@media (prefers-reduced-motion:reduce){
+  .hero h1 .line{overflow:visible}
+  .hero h1 .line i{transform:none}
+}
