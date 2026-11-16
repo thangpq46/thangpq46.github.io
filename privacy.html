@@ -31,16 +31,17 @@
   <div class="legal-hero reveal">
     <span class="kicker">Legal</span>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective September 13, 2026 · Applies to every Android app published by Shura Studios</p>
+    <p class="meta">Effective November 16, 2026 · Applies to every Android app published by Shura Studios</p>
     <div class="applies">
       <a href="https://play.google.com/store/apps/details?id=com.shura.studios.diary" target="_blank" rel="noopener"><img src="assets/app-kuro.png" alt="">Kuro: Private Diary Journal</a>
       <a href="https://play.google.com/store/apps/details?id=com.shura.studios.birds" target="_blank" rel="noopener"><img src="assets/app-tengu.png" alt="">Tengu: Bird ID &amp; Sounds</a>
       <a href="https://play.google.com/store/apps/details?id=com.shura.studios.kids.piano" target="_blank" rel="noopener"><img src="assets/app-piano.png" alt="">Shura Kids Piano</a>
+      <a href="https://play.google.com/store/apps/details?id=com.shura.studios.sketch" target="_blank" rel="noopener"><img src="assets/app-shusketch.png" alt="">Shu Sketch</a>
     </div>
   </div>
 
   <div class="note reveal">
-    <p><strong>The short version.</strong> We do not run servers that store your content, and we have no account system, so there is no profile of you anywhere in our infrastructure. What you write, save and record stays in the app's private storage on your device. Three things do leave the phone, and only when you use them: a photo or recording you submit for bird identification, a diary backup you choose to upload to your own Google Drive, and the ordinary requests an ad or a purchase makes to Google. Every one of those is spelled out below.</p>
+    <p><strong>The short version.</strong> We do not run servers that store your content, and we have no account system, so there is no profile of you anywhere in our infrastructure. What you write, save and record stays in the app's private storage on your device. Three things do leave the phone, and only when you use them: a photo or recording you submit for bird identification, a diary backup you choose to upload to your own Google Drive, and the ordinary requests an ad, a purchase, or our analytics and crash reporting make to Google. Every one of those is spelled out below.</p>
   </div>
 
   <div class="toc reveal">
@@ -68,7 +69,7 @@
 
   <h2 id="scope" class="reveal"><span class="num">01</span> Scope and who we are</h2>
   <p>Shura Studios ("we", "us") is an independent Android developer. This policy is the single privacy policy for every app we publish on Google Play, and it is the policy linked from each app's Play Store listing and from the Settings screen inside each app. Where a rule applies to only one app, that app is named.</p>
-  <p>The apps covered are <strong>Kuro: Private Diary Journal</strong> (<code>com.shura.studios.diary</code>), <strong>Tengu: Bird ID &amp; Sounds</strong> (<code>com.shura.studios.birds</code>) and <strong>Shura Kids Piano</strong> (<code>com.shura.studios.kids.piano</code>). If we publish another app, this policy is updated to cover it before that app ships.</p>
+  <p>The apps covered are <strong>Kuro: Private Diary Journal</strong> (<code>com.shura.studios.diary</code>), <strong>Tengu: Bird ID &amp; Sounds</strong> (<code>com.shura.studios.birds</code>), <strong>Shura Kids Piano</strong> (<code>com.shura.studios.kids.piano</code>) and <strong>Shu Sketch</strong> (<code>com.shura.studios.sketch</code>). If we publish another app, this policy is updated to cover it before that app ships.</p>
   <p>For users in the European Economic Area and the United Kingdom, Shura Studios is the data controller for the limited processing described here. You can reach us at <a href="mailto:shurastudios@gmail.com">shurastudios@gmail.com</a>.</p>
 
   <h2 id="ataglance" class="reveal"><span class="num">02</span> The catalogue at a glance</h2>
@@ -100,13 +101,20 @@
           <td>None</td>
           <td>None</td>
         </tr>
+        <tr>
+          <td><strong>Shu Sketch</strong><br>Draw &amp; Paint</td>
+          <td>None of your artwork. Only analytics events and crash reports; drawings leave the device only when you export or share them</td>
+          <td>None</td>
+          <td>Firebase Analytics + Crashlytics</td>
+          <td>None</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
   <h2 id="device" class="reveal"><span class="num">03</span> What stays on your device</h2>
   <h3>Content you create</h3>
-  <p>Diary entries, titles, tags, moods, attached photos and voice notes in Kuro; saved birds, your collection and your identification history in Tengu; progress and settings in Shura Kids Piano — all of it is written to the app's private storage on your device. It is not transmitted to us and we have no ability to read it.</p>
+  <p>Diary entries, titles, tags, moods, attached photos and voice notes in Kuro; saved birds, your collection and your identification history in Tengu; progress and settings in Shura Kids Piano; artworks, layers, imported photos and time-lapse frames in Shu Sketch — all of it is written to the app's private storage on your device. It is not transmitted to us and we have no ability to read it.</p>
   <h3>Your PIN and biometrics</h3>
   <p>The PIN that locks Kuro is stored only on your device. Fingerprint and face unlock are handled entirely by Android's BiometricPrompt: the app receives a yes-or-no result and never sees your biometric data, which never leaves the secure hardware on your phone.</p>
   <h3>App settings</h3>
@@ -126,6 +134,7 @@
   <h3>Ordinary network requests</h3>
   <p>Kuro and Tengu also make requests to Google for ads, crash reporting and purchase verification, and to Google Play when you tap a link to a store page. Those are covered in §7, §8 and §9.</p>
   <p>Shura Kids Piano makes no network requests of its own at all beyond the ad requests its ad component makes.</p>
+  <p>Shu Sketch has no ads, no purchases and no account. Its only network traffic is Firebase Analytics and Crashlytics (§8). Your drawings, the photos you import and the time-lapse videos you record are never uploaded by the app; they leave the device only when you export or share them yourself, to the place you choose.</p>
 
   <h2 id="drive" class="reveal"><span class="num">05</span> Google Drive backup (Kuro only, optional)</h2>
   <p>Backup is off by default. If you turn it on, you sign in with your Google Account and the app requests a single scope:</p>
@@ -142,7 +151,7 @@
   </div>
 
   <h2 id="ads" class="reveal"><span class="num">07</span> Advertising</h2>
-  <p>The free versions of our apps show ads through <strong>Google AdMob</strong>. AdMob is an independent controller for the data it collects, under the <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>. To serve and measure an ad, AdMob may process technical information such as your device model, operating system version, coarse region derived from your IP address, and — outside our kids' app — the resettable Android advertising ID.</p>
+  <p>Shu Sketch shows no ads at all. The free versions of our other apps show ads through <strong>Google AdMob</strong>. AdMob is an independent controller for the data it collects, under the <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>. To serve and measure an ad, AdMob may process technical information such as your device model, operating system version, coarse region derived from your IP address, and — outside our kids' app — the resettable Android advertising ID.</p>
   <h3>Consent in the EEA, the UK and Switzerland</h3>
   <p>Where the law requires it, the first launch shows a Google-certified consent form (the User Messaging Platform) before any personalised ad loads. Choosing to refuse personalised ads does not lock you out of anything: the app still works and shows non-personalised ads instead. You can reopen that choice at any time from the app's Settings screen.</p>
   <h3>Shura Kids Piano</h3>
@@ -151,8 +160,8 @@
   <p>Every app with ads offers a paid upgrade that removes them entirely. Once the upgrade is active, the ad component is not initialised and no ad requests are made.</p>
 
   <h2 id="analytics" class="reveal"><span class="num">08</span> Analytics and crash reports</h2>
-  <p>Kuro and Tengu include <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>. They tell us which screens are used and what crashed, so we can fix the right things. What they collect is aggregate and technical: screen names, app version, device model, OS version, coarse region, a pseudonymous app-instance identifier, and — when something crashes — a stack trace and the state of the app at that moment.</p>
-  <p>Crash reports never contain the content of your entries, your photos, your recordings or your PIN. We use this data to diagnose bugs and prioritise work, nothing else, and we do not attempt to identify individual users from it. Firebase's own processing is described in the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security documentation</a>.</p>
+  <p>Kuro, Tengu and Shu Sketch include <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>. They tell us which screens are used and what crashed, so we can fix the right things. What they collect is aggregate and technical: screen names, app version, device model, OS version, coarse region, a pseudonymous app-instance identifier, and — when something crashes — a stack trace and the state of the app at that moment.</p>
+  <p>Crash reports never contain the content of your entries, your drawings, your photos, your recordings or your PIN. We use this data to diagnose bugs and prioritise work, nothing else, and we do not attempt to identify individual users from it. Firebase's own processing is described in the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security documentation</a>.</p>
   <p><strong>Shura Kids Piano contains no analytics or crash-reporting SDK whatsoever.</strong></p>
 
   <h2 id="purchases" class="reveal"><span class="num">09</span> Purchases and subscriptions</h2>
@@ -167,9 +176,10 @@
       <tbody>
         <tr><td><code>CAMERA</code></td><td>Tengu</td><td>To photograph a bird for identification. Images are used for that request only.</td></tr>
         <tr><td><code>RECORD_AUDIO</code></td><td>Tengu, Kuro</td><td>To record birdsong for sound identification, and to record voice notes in a diary entry. The microphone opens only while you are recording.</td></tr>
-        <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Tengu, Kuro</td><td>Identification requests, Drive backup, ads, crash reports.</td></tr>
+        <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Tengu, Kuro, Shu Sketch</td><td>Identification requests, Drive backup, ads, analytics and crash reports.</td></tr>
+        <tr><td>System photo picker (no permission)</td><td>Shu Sketch</td><td>To import a photo to draw over. Android's photo picker hands the app only the image you choose; the app cannot browse your library. Exports are saved to Pictures and Movies through MediaStore, which needs no storage permission.</td></tr>
         <tr><td><code>POST_NOTIFICATIONS</code></td><td>Kuro</td><td>The daily writing reminder, if you switch it on. Notifications are generated on the device; we do not run a push server.</td></tr>
-        <tr><td><code>com.android.vending.BILLING</code></td><td>All</td><td>In-app purchases through Google Play.</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>All except Shu Sketch</td><td>In-app purchases through Google Play.</td></tr>
         <tr><td colspan="3"><strong>Never requested by any app:</strong> location (fine or coarse), contacts, SMS, call logs, or access to your full photo library. Shura Kids Piano declares no runtime permissions at all.</td></tr>
       </tbody>
     </table>
@@ -187,7 +197,7 @@
 
   <h2 id="children" class="reveal"><span class="num">13</span> Children and families</h2>
   <p><strong>Shura Kids Piano</strong> is designed for children and participates in Google Play's Families programme. It collects no personal information, asks for no permissions, requires no account, works entirely offline, and has the advertising ID stripped out at build time. Ads in it are restricted to general-audience content and tagged as child-directed, which turns off personalised advertising. We believe this meets the requirements of the US Children's Online Privacy Protection Act (COPPA) and the equivalent rules for children's data in the EEA and the UK.</p>
-  <p><strong>Kuro and Tengu</strong> are general-audience apps, not directed to children, and are not intended for anyone under 13 (or the higher minimum age that applies where you live). We do not knowingly collect personal information from children in those apps. If you believe a child has provided us with personal information, write to <a href="mailto:shurastudios@gmail.com">shurastudios@gmail.com</a> and we will delete what we can reach.</p>
+  <p><strong>Kuro, Tengu and Shu Sketch</strong> are general-audience apps, not directed to children, and are not intended for anyone under 13 (or the higher minimum age that applies where you live). We do not knowingly collect personal information from children in those apps. If you believe a child has provided us with personal information, write to <a href="mailto:shurastudios@gmail.com">shurastudios@gmail.com</a> and we will delete what we can reach.</p>
 
   <h2 id="transfers" class="reveal"><span class="num">14</span> International transfers</h2>
   <p>The third-party services described above — Google (ads, analytics, Drive, billing) and the identification services in §4 — operate infrastructure in several countries, including the United States. Where data reaches them, the transfer is carried out under those providers' own safeguards, which for Google include the European Commission's Standard Contractual Clauses. We ourselves hold no database of user data in any country.</p>

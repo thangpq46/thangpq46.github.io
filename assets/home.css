@@ -81,6 +81,7 @@ section.wrap{padding:100px 24px}
 .app-card.kuro .halo{background:#7c3aed}
 .app-card.tengu .halo{background:#10b981}
 .app-card.piano .halo{background:#ff8a3d}
+.app-card.sketch .halo{background:#00b8d4}
 
 /* ── Stats ─────────────────────────────────────────────────────────────── */
 .stats{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
