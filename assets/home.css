@@ -82,6 +82,7 @@ section.wrap{padding:100px 24px}
 .app-card.tengu .halo{background:#10b981}
 .app-card.piano .halo{background:#ff8a3d}
 .app-card.sketch .halo{background:#00b8d4}
+.app-card.capydoku .halo{background:#e0a458}.app-card.genifighter .halo{background:#ef4444}.app-card.grillparty .halo{background:#f97316}.app-card.munchielive .halo{background:#ec4899}.app-card.petdom .halo{background:#22c55e}.app-card.petsjump .halo{background:#38bdf8}.app-card.shurafilm .halo{background:#eab308}.app-card.shuraps2 .halo{background:#6366f1}
 
 /* ── Stats ─────────────────────────────────────────────────────────────── */
 .stats{display:grid;gap:1px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));

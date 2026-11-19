@@ -1,6 +1,6 @@
 # Shura Studios — website
 
-The studio site for **Shura Studios**, published with GitHub Pages. It carries the
+The studio site for **Shura Studios**, published on Cloudflare Pages at https://shurastudios.com (GitHub Pages mirror at thangpq46.github.io). It carries the
 home page plus the **single privacy policy and terms of service shared by every app
 we publish**, so each Play Store listing can point at one stable URL.
 
@@ -17,14 +17,26 @@ we publish**, so each Play Store listing can point at one stable URL.
 
 ## Apps covered
 
-| App | Package | Notes |
-|---|---|---|
-| Kuro: Private Diary Journal | `com.shura.studios.kuro.diary` | Local storage, optional Drive `appdata` backup, AdMob, Firebase |
-| Tengu: Bird ID & Sounds | `com.shura.studios.birds` | Photo + BirdNET sound ID, AdMob, Firebase |
-| Shura Kids Piano | `com.shura.studios.kids.piano` | Families policy, fully offline, no advertising ID, no analytics |
+`privacy.html` covers the four apps below; every other app has its own `<slug>-privacy.html`.
+`terms.html` covers all twelve.
 
-When a new app ships, add a card to `index.html`, a row to the table in
-`privacy.html` §2, and name it in §1 of both legal pages.
+| App | Package | Privacy policy |
+|---|---|---|
+| Kuro: Private Diary Journal | `com.shura.studios.kuro.diary` | `privacy.html` (app site: kuro.shurastudios.com) |
+| Tengu: Bird ID & Sounds | `com.shura.studios.birds` | `privacy.html` |
+| Shura Kids Piano | `com.shura.studios.kids.piano` | `privacy.html` |
+| Shu Sketch | `com.shura.studios.sketch` | `privacy.html` |
+| Capydoku: Cozy Logic Puzzle | `com.shurastudios.capydoku` | `capydoku-privacy.html` |
+| Geni Fighter | `com.shurastudios.genifighter` | `genifighter-privacy.html` |
+| Grill Party: Skewer Sort | `com.shurastudios.grillparty` | `grillparty-privacy.html` |
+| Munchie Live: ASMR Eating | `com.shurastudios.munchielive` | `munchielive-privacy.html` |
+| PetDom: Pocket Pixels | `com.shura.studios.pets.dom` | `petdom-privacy.html` |
+| Pets Jump | `com.shura.studios.pets.jump` | `petsjump-privacy.html` |
+| Shura Film: 35mm Film Camera | `com.shurastudios.shurafilm` | `shurafilm-privacy.html` |
+| ShuraPS2 | `com.shura.emulator.ps2` | `shuraps2-privacy.html` |
+
+When a new app ships, add a card to `index.html` (icon in `assets/app-<slug>.png`), a footer link,
+a chip and a §1 entry in `terms.html`, and either name it in `privacy.html` or give it its own policy.
 
 ## Local preview
 
