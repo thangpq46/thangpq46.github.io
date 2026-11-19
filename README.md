@@ -19,7 +19,7 @@ we publish**, so each Play Store listing can point at one stable URL.
 
 | App | Package | Notes |
 |---|---|---|
-| Kuro: Private Diary Journal | `com.shura.studios.diary` | Local storage, optional Drive `appdata` backup, AdMob, Firebase |
+| Kuro: Private Diary Journal | `com.shura.studios.kuro.diary` | Local storage, optional Drive `appdata` backup, AdMob, Firebase |
 | Tengu: Bird ID & Sounds | `com.shura.studios.birds` | Photo + BirdNET sound ID, AdMob, Firebase |
 | Shura Kids Piano | `com.shura.studios.kids.piano` | Families policy, fully offline, no advertising ID, no analytics |
 
